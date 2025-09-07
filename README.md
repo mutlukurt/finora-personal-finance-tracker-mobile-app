@@ -6,14 +6,14 @@
 
 ### Onboarding & Authentication
 <div align="center">
-  <img src="assets/1.png" width="250" alt="Onboarding Screen 1" />
-  <img src="assets/2.png" width="250" alt="Onboarding Screen 2" />
-  <img src="assets/3.png" width="250" alt="Onboarding Screen 3" />
+  <img src="assets/images/1.png" width="250" alt="Onboarding Screen 1" />
+  <img src="assets/images/2.png" width="250" alt="Onboarding Screen 2" />
+  <img src="assets/images/3.png" width="250" alt="Onboarding Screen 3" />
 </div>
 
 <div align="center">
-  <img src="assets/4.png" width="250" alt="Sign In Screen" />
-  <img src="assets/5.png" width="250" alt="Sign Up Screen" />
+  <img src="assets/images/4.png" width="250" alt="Sign In Screen" />
+  <img src="assets/images/5.png" width="250" alt="Sign Up Screen" />
 </div>
 
 ### Main Application
@@ -33,18 +33,13 @@
 <div align="center">
   <img src="assets/images/12.png" width="250" alt="Budget Overview" />
   <img src="assets/images/13.png" width="250" alt="Budget Details" />
-  <img src="assets/images/14.png" width="250" alt="Budget Creation" />
 </div>
 
 ### Profile & Settings
 <div align="center">
-  <img src="assets/images/15.png" width="250" alt="Profile Screen" />
-  <img src="assets/images/16.png" width="250" alt="Settings" />
-  <img src="assets/images/17.png" width="250" alt="Theme Settings" />
-</div>
-
-<div align="center">
-  <img src="assets/images/18.png" width="250" alt="Additional Features" />
+  <img src="assets/images/14.png" width="250" alt="Profile Screen" />
+  <img src="assets/images/15.png" width="250" alt="Settings" />
+  <img src="assets/images/16.png" width="250" alt="Theme Settings" />
 </div>
 
 A modern, intuitive personal finance tracking mobile application built with React Native and Expo. Finora helps you take control of your finances with intelligent expense tracking, budgeting tools, and insightful analytics.
