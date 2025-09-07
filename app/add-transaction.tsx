@@ -77,6 +77,10 @@ export default function AddTransactionScreen() {
   const titleFontSize = isSmallScreen ? 16 : 18;
   const amountFontSize = isSmallScreen ? 24 : isMediumScreen ? 28 : 32;
 
+  const handleClose = () => {
+    router.dismiss();
+  };
+
   const handleSave = () => {
     if (!amount || !selectedCategory) {
       return;
@@ -92,7 +96,7 @@ export default function AddTransactionScreen() {
       date,
     });
     
-    router.back();
+    router.dismiss();
   };
 
   const formatDate = (date: Date) => {
@@ -108,7 +112,7 @@ export default function AddTransactionScreen() {
       <TouchableOpacity 
         style={styles.backdrop} 
         activeOpacity={1} 
-        onPress={() => router.back()}
+        onPress={handleClose}
       />
       <View style={[
         styles.bottomSheet, 
