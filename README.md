@@ -17,12 +17,12 @@
 | Screenshot 7 | Screenshot 8 | Screenshot 9 |
 |:---:|:---:|:---:|
 | ![Add Transaction](assets/images/7.png) | ![Add Transaction Income](assets/images/8.png) | ![Transactions List](assets/images/9.png) |
-| Add Expense | Add Income | Transactions |
+| Add Expense | Transactions | Budgets |
 
 | Screenshot 10 | Screenshot 11 | Screenshot 12 |
 |:---:|:---:|:---:|
 | ![Budgets Overview](assets/images/10.png) | ![Dark Mode Home](assets/images/11.png) | ![Dark Mode Transaction](assets/images/12.png) |
-| Budgets Overview | Dark Mode Home | Dark Mode Transaction |
+| Profile | Dark Mode Home | Dark Mode Transaction |
 
 | Screenshot 13 | Screenshot 14 | Screenshot 15 |
 |:---:|:---:|:---:|
