@@ -14,13 +14,13 @@ export default function TabLayout() {
   const isSmallScreen = screenWidth <= 320;
   const isMediumScreen = screenWidth > 320 && screenWidth <= 375;
   
-  const tabBarHeight = isSmallScreen ? 75 : 90;
-  const paddingBottom = isSmallScreen ? 25 : 34;
-  const paddingTop = isSmallScreen ? 4 : 8;
+  const tabBarHeight = isSmallScreen ? 85 : 90;
+  const paddingBottom = isSmallScreen ? 30 : 34;
+  const paddingTop = isSmallScreen ? 8 : 8;
   const iconSize = isSmallScreen ? 18 : 22;
-  const fontSize = isSmallScreen ? 10 : 11;
-  const labelMarginTop = isSmallScreen ? 2 : 2;
-  const iconMarginTop = isSmallScreen ? 1 : 4;
+  const fontSize = isSmallScreen ? 9 : 11;
+  const labelMarginTop = isSmallScreen ? 4 : 2;
+  const iconMarginTop = isSmallScreen ? 2 : 4;
 
   return (
     <>
@@ -102,7 +102,7 @@ export default function TabLayout() {
 const styles = StyleSheet.create({
   fabContainer: {
     position: 'absolute',
-    bottom: screenWidth <= 320 ? 95 : 110,
+    bottom: screenWidth <= 320 ? 105 : 110,
     right: 20,
     borderRadius: 28,
     padding: 4,
