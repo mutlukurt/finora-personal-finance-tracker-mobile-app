@@ -77,11 +77,7 @@ export default function AddTransactionScreen() {
   const amountFontSize = isSmallScreen ? 24 : isMediumScreen ? 28 : 32;
 
   const handleClose = () => {
-    if (router.canGoBack()) {
-      router.back();
-    } else {
-      router.replace('/(tabs)');
-    }
+    router.replace('/(tabs)');
   };
 
   const handleSave = () => {
@@ -99,11 +95,7 @@ export default function AddTransactionScreen() {
       date,
     });
     
-    if (router.canGoBack()) {
-      router.back();
-    } else {
-      router.replace('/(tabs)');
-    }
+    router.replace('/(tabs)');
   };
 
   const formatDate = (date: Date) => {

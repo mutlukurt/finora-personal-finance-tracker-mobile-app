@@ -17,9 +17,8 @@ export default function RootLayout() {
           name="add-transaction" 
           options={{ 
             headerShown: false,
-            presentation: 'modal',
-            gestureEnabled: true,
-            gestureDirection: 'vertical'
+            presentation: 'transparentModal',
+            animation: 'slide_from_bottom'
           }} 
         />
         <Stack.Screen name="+not-found" />
