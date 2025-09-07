@@ -4,43 +4,35 @@
 
 ## 📱 Screenshots
 
-### Onboarding & Authentication
-<div align="center">
-  <img src="assets/images/1.png" width="250" alt="Onboarding Screen 1" />
-  <img src="assets/images/2.png" width="250" alt="Onboarding Screen 2" />
-  <img src="assets/images/3.png" width="250" alt="Onboarding Screen 3" />
-</div>
+| Screenshot 1 | Screenshot 2 | Screenshot 3 |
+|:---:|:---:|:---:|
+| ![Onboarding Screen 1](assets/images/1.png) | ![Onboarding Screen 2](assets/images/2.png) | ![Onboarding Screen 3](assets/images/3.png) |
+| Smart Financial Tracking | Bank-Level Security | Personalized Insights |
 
-<div align="center">
-  <img src="assets/images/4.png" width="250" alt="Sign In Screen" />
-  <img src="assets/images/5.png" width="250" alt="Sign Up Screen" />
-</div>
+| Screenshot 4 | Screenshot 5 | Screenshot 6 |
+|:---:|:---:|:---:|
+| ![Sign In Screen](assets/images/4.png) | ![Home Dashboard](assets/images/5.png) | ![Home Dashboard Extended](assets/images/6.png) |
+| Welcome Back! | Good Morning Dashboard | Account Overview |
 
-### Main Application
-<div align="center">
-  <img src="assets/images/6.png" width="250" alt="Home Dashboard" />
-  <img src="assets/images/7.png" width="250" alt="Account Overview" />
-  <img src="assets/images/8.png" width="250" alt="Quick Actions" />
-</div>
+| Screenshot 7 | Screenshot 8 | Screenshot 9 |
+|:---:|:---:|:---:|
+| ![Add Transaction](assets/images/7.png) | ![Add Transaction Income](assets/images/8.png) | ![Transactions List](assets/images/9.png) |
+| Add Expense | Add Income | Transactions |
 
-<div align="center">
-  <img src="assets/images/9.png" width="250" alt="Transactions List" />
-  <img src="assets/images/10.png" width="250" alt="Transaction Details" />
-  <img src="assets/images/11.png" width="250" alt="Add Transaction" />
-</div>
+| Screenshot 10 | Screenshot 11 | Screenshot 12 |
+|:---:|:---:|:---:|
+| ![Budgets Overview](assets/images/10.png) | ![Dark Mode Home](assets/images/11.png) | ![Dark Mode Transaction](assets/images/12.png) |
+| Budgets Overview | Dark Mode Home | Dark Mode Transaction |
 
-### Budget Management
-<div align="center">
-  <img src="assets/images/12.png" width="250" alt="Budget Overview" />
-  <img src="assets/images/13.png" width="250" alt="Budget Details" />
-</div>
+| Screenshot 13 | Screenshot 14 | Screenshot 15 |
+|:---:|:---:|:---:|
+| ![Dark Mode Income](assets/images/13.png) | ![Dark Mode Transactions](assets/images/14.png) | ![Dark Mode Budgets](assets/images/15.png) |
+| Dark Mode Income | Dark Mode Transactions | Dark Mode Budgets |
 
-### Profile & Settings
-<div align="center">
-  <img src="assets/images/14.png" width="250" alt="Profile Screen" />
-  <img src="assets/images/15.png" width="250" alt="Settings" />
-  <img src="assets/images/16.png" width="250" alt="Theme Settings" />
-</div>
+| Screenshot 16 |
+|:---:|
+| ![Dark Mode Profile](assets/images/16.png) |
+| Dark Mode Profile |
 
 A modern, intuitive personal finance tracking mobile application built with React Native and Expo. Finora helps you take control of your finances with intelligent expense tracking, budgeting tools, and insightful analytics.
 
