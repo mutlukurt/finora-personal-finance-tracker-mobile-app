@@ -37,7 +37,12 @@ export default function TabLayout() {
           },
           tabBarActiveTintColor: colors.primary,
           tabBarInactiveTintColor: colors.textSecondary,
-          tabBarShowLabel: false,
+          tabBarShowLabel: true,
+          tabBarLabelStyle: {
+            fontSize: fontSize,
+            fontWeight: '600',
+            marginTop: labelMarginTop,
+          },
           tabBarIconStyle: {
             marginTop: iconMarginTop,
             marginBottom: 0,
