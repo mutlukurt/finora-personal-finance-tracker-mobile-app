@@ -16,12 +16,12 @@ export default function TabLayout() {
   const isMediumScreen = screenWidth > 320 && screenWidth <= 375;
   
   const tabBarHeight = isSmallScreen ? 75 : 90;
-  const paddingBottom = isSmallScreen ? 20 : 34;
+  const paddingBottom = isSmallScreen ? 25 : 34;
   const paddingTop = isSmallScreen ? 4 : 8;
   const iconSize = isSmallScreen ? 18 : 22;
   const fontSize = isSmallScreen ? 10 : 11;
-  const labelMarginTop = isSmallScreen ? 1 : 2;
-  const iconMarginTop = isSmallScreen ? 2 : 4;
+  const labelMarginTop = isSmallScreen ? 2 : 2;
+  const iconMarginTop = isSmallScreen ? 1 : 4;
 
   return (
     <>
@@ -42,7 +42,7 @@ export default function TabLayout() {
             fontSize: fontSize,
             fontWeight: '500',
             marginTop: labelMarginTop,
-            marginBottom: labelMarginTop,
+            marginBottom: isSmallScreen ? 3 : labelMarginTop,
           },
           tabBarIconStyle: {
             marginTop: iconMarginTop,
