@@ -1,13 +1,27 @@
 import { Tabs } from 'expo-router';
 import { useRouter } from 'expo-router';
 import { Chrome as Home, Receipt, ChartPie as PieChart, User, Plus } from 'lucide-react-native';
-import { View, TouchableOpacity, StyleSheet } from 'react-native';
+import { View, TouchableOpacity, StyleSheet, Dimensions } from 'react-native';
 import { useTheme } from '@/contexts/ThemeContext';
+
+const { width: screenWidth } = Dimensions.get('window');
 
 export default function TabLayout() {
   const { theme } = useTheme();
   const router = useRouter();
   const colors = theme.colors;
+
+  // Responsive calculations
+  const isSmallScreen = screenWidth <= 320;
+  const isMediumScreen = screenWidth > 320 && screenWidth <= 375;
+  
+  const tabBarHeight = isSmallScreen ? 75 : 90;
+  const paddingBottom = isSmallScreen ? 20 : 34;
+  const paddingTop = isSmallScreen ? 4 : 8;
+  const iconSize = isSmallScreen ? 18 : 22;
+  const fontSize = isSmallScreen ? 10 : 11;
+  const labelMarginTop = isSmallScreen ? 1 : 2;
+  const iconMarginTop = isSmallScreen ? 2 : 4;
 
   return (
     <>
@@ -18,20 +32,20 @@ export default function TabLayout() {
             backgroundColor: colors.surface,
             borderTopColor: colors.border,
             borderTopWidth: 1,
-            height: 90,
-            paddingBottom: 34,
-            paddingTop: 8,
+            height: tabBarHeight,
+            paddingBottom: paddingBottom,
+            paddingTop: paddingTop,
           },
           tabBarActiveTintColor: colors.primary,
           tabBarInactiveTintColor: colors.textSecondary,
           tabBarLabelStyle: {
-            fontSize: 11,
+            fontSize: fontSize,
             fontWeight: '500',
-            marginTop: 2,
-            marginBottom: 2,
+            marginTop: labelMarginTop,
+            marginBottom: labelMarginTop,
           },
           tabBarIconStyle: {
-            marginTop: 4,
+            marginTop: iconMarginTop,
           },
         }}>
         <Tabs.Screen
@@ -39,7 +53,7 @@ export default function TabLayout() {
           options={{
             title: 'Home',
             tabBarIcon: ({ size, color }) => (
-              <Home size={22} color={color} />
+              <Home size={iconSize} color={color} />
             ),
           }}
         />
@@ -48,7 +62,7 @@ export default function TabLayout() {
           options={{
             title: 'Transactions',
             tabBarIcon: ({ size, color }) => (
-              <Receipt size={22} color={color} />
+              <Receipt size={iconSize} color={color} />
             ),
           }}
         />
@@ -57,7 +71,7 @@ export default function TabLayout() {
           options={{
             title: 'Budgets',
             tabBarIcon: ({ size, color }) => (
-              <PieChart size={22} color={color} />
+              <PieChart size={iconSize} color={color} />
             ),
           }}
         />
@@ -66,7 +80,7 @@ export default function TabLayout() {
           options={{
             title: 'Profile',
             tabBarIcon: ({ size, color }) => (
-              <User size={22} color={color} />
+              <User size={iconSize} color={color} />
             ),
           }}
         />
@@ -89,7 +103,7 @@ export default function TabLayout() {
 const styles = StyleSheet.create({
   fabContainer: {
     position: 'absolute',
-    bottom: 110,
+    bottom: screenWidth <= 320 ? 95 : 110,
     right: 20,
     borderRadius: 28,
     padding: 4,
