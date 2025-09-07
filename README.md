@@ -2,29 +2,6 @@
 
 🚀 **[Live Demo](https://finora-personal-fina-hwth.bolt.host)**
 
-A modern, intuitive personal finance tracking mobile application built with React Native and Expo. Finora helps you take control of your finances with intelligent expense tracking, budgeting tools, and insightful analytics.
-
-## ✨ Features
-
-- **Smart Financial Tracking**: Intelligent expense categorization and tracking
-- **Multi-Account Management**: Support for checking, savings, and crypto accounts
-- **Budget Management**: Create and monitor budgets with visual progress indicators
-- **Transaction Management**: Easy transaction entry with receipt scanning capability
-- **Real-time Analytics**: Visual spending charts and financial insights
-- **Responsive Design**: Optimized for all screen sizes from mobile to desktop
-- **Dark/Light Theme**: Automatic theme switching with system preference support
-- **Secure Authentication**: Email/password authentication with demo account option
-
-## 🛠️ Tech Stack
-
-- **Framework**: React Native with Expo SDK 53
-- **Navigation**: Expo Router v5
-- **Language**: TypeScript
-- **Styling**: StyleSheet with responsive design
-- **Icons**: Lucide React Native
-- **State Management**: React Context API
-- **Platform**: Cross-platform (iOS, Android, Web)
-
 ## 📱 Screenshots
 
 ### Onboarding & Authentication
@@ -69,6 +46,29 @@ A modern, intuitive personal finance tracking mobile application built with Reac
 <div align="center">
   <img src="assets/images/18.png" width="250" alt="Additional Features" />
 </div>
+
+A modern, intuitive personal finance tracking mobile application built with React Native and Expo. Finora helps you take control of your finances with intelligent expense tracking, budgeting tools, and insightful analytics.
+
+## ✨ Features
+
+- **Smart Financial Tracking**: Intelligent expense categorization and tracking
+- **Multi-Account Management**: Support for checking, savings, and crypto accounts
+- **Budget Management**: Create and monitor budgets with visual progress indicators
+- **Transaction Management**: Easy transaction entry with receipt scanning capability
+- **Real-time Analytics**: Visual spending charts and financial insights
+- **Responsive Design**: Optimized for all screen sizes from mobile to desktop
+- **Dark/Light Theme**: Automatic theme switching with system preference support
+- **Secure Authentication**: Email/password authentication with demo account option
+
+## 🛠️ Tech Stack
+
+- **Framework**: React Native with Expo SDK 53
+- **Navigation**: Expo Router v5
+- **Language**: TypeScript
+- **Styling**: StyleSheet with responsive design
+- **Icons**: Lucide React Native
+- **State Management**: React Context API
+- **Platform**: Cross-platform (iOS, Android, Web)
 
 ## 🚀 Getting Started
 
