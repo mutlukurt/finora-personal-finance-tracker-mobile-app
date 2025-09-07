@@ -10,7 +10,7 @@ import {
   Modal,
   Dimensions,
 } from 'react-native';
-import { useRouter } from 'expo-router';
+import { useRouter, router } from 'expo-router';
 import { 
   X, 
   Calculator, 
@@ -48,7 +48,6 @@ const accounts = [
 
 export default function AddTransactionScreen() {
   const { theme } = useTheme();
-  const router = useRouter();
   const colors = theme.colors;
   
   const [transactionType, setTransactionType] = useState<'expense' | 'income'>('expense');
@@ -78,7 +77,11 @@ export default function AddTransactionScreen() {
   const amountFontSize = isSmallScreen ? 24 : isMediumScreen ? 28 : 32;
 
   const handleClose = () => {
-    router.dismiss();
+    if (router.canGoBack()) {
+      router.back();
+    } else {
+      router.replace('/(tabs)');
+    }
   };
 
   const handleSave = () => {
@@ -96,7 +99,11 @@ export default function AddTransactionScreen() {
       date,
     });
     
-    router.dismiss();
+    if (router.canGoBack()) {
+      router.back();
+    } else {
+      router.replace('/(tabs)');
+    }
   };
 
   const formatDate = (date: Date) => {

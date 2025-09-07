@@ -13,6 +13,15 @@ export default function RootLayout() {
         <Stack.Screen name="onboarding" options={{ headerShown: false }} />
         <Stack.Screen name="auth" options={{ headerShown: false }} />
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+        <Stack.Screen 
+          name="add-transaction" 
+          options={{ 
+            headerShown: false,
+            presentation: 'modal',
+            gestureEnabled: true,
+            gestureDirection: 'vertical'
+          }} 
+        />
         <Stack.Screen name="+not-found" />
       </Stack>
       <StatusBar style="auto" />

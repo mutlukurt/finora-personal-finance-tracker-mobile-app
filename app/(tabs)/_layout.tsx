@@ -1,5 +1,5 @@
 import { Tabs } from 'expo-router';
-import { useRouter } from 'expo-router';
+import { useRouter, router } from 'expo-router';
 import { Chrome as Home, Receipt, ChartPie as PieChart, User, Plus } from 'lucide-react-native';
 import { View, TouchableOpacity, StyleSheet, Dimensions } from 'react-native';
 import { useTheme } from '@/contexts/ThemeContext';
@@ -8,7 +8,6 @@ const { width: screenWidth } = Dimensions.get('window');
 
 export default function TabLayout() {
   const { theme } = useTheme();
-  const router = useRouter();
   const colors = theme.colors;
 
   // Responsive calculations
@@ -91,7 +90,7 @@ export default function TabLayout() {
         <TouchableOpacity 
           style={[styles.fab, { backgroundColor: colors.primary }]}
           activeOpacity={0.8}
-          onPress={() => router.push('/add-transaction')}
+          onPress={() => router.push('/add-transaction' as any)}
         >
           <Plus size={24} color={colors.surface} strokeWidth={2.5} />
         </TouchableOpacity>
