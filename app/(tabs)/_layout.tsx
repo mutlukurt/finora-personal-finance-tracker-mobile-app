@@ -15,7 +15,7 @@ export default function TabLayout() {
   const isMediumScreen = screenWidth > 320 && screenWidth <= 375;
   
   const tabBarHeight = isSmallScreen ? 70 : 90;
-  const paddingBottom = isSmallScreen ? 20 : 34;
+  const paddingBottom = isSmallScreen ? 8 : 20;
   const paddingTop = isSmallScreen ? 8 : 8;
   const iconSize = isSmallScreen ? 18 : 22;
   const fontSize = isSmallScreen ? 10 : 11;
@@ -31,7 +31,7 @@ export default function TabLayout() {
             backgroundColor: colors.surface,
             borderTopColor: colors.border,
             borderTopWidth: 1,
-            height: tabBarHeight,
+            height: tabBarHeight + 20,
             paddingBottom: paddingBottom,
             paddingTop: paddingTop,
           },
